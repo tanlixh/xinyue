@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="腾讯游戏全新推出G-PASS特权，心悦V3会员通过心悦APP下载并进入游戏，即可激活G-PASS身份，独享包括直送VIP、三重礼包、专属标识、高额返利、组队豪礼、抢先试玩等在内的六大特权。G-PASS特权---心悦V3会员专享，终极游戏福利限量内测中。">
+    <meta name="Keywords" content="心悦,腾讯游戏,G-PASS,特权,心悦V3,V3专享,限量内测,终极福利,腾讯福利,心悦福利,直送VIP,三重礼包,专属标识,高额返利,gpass,会员专享">
+
+    <title>腾讯游戏G-PASS特权</title>
+    <link rel="stylesheet" href="./css/commen.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common2.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/light.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./jquery-1.12.4.js"></script>
+</head>
+<body>
+      <!-- 头部 -->
+      <header>
+        <div class="w">
+            <nav>
+                <div class="logo"><a href="../index.html"></a></div>
+                <div class="login"><a href="javascript:void(0)">登录</a></div>
+                <div class="navBtn">
+                    <i></i>
+                    <i class="zhixian"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="navwrap" style="display: none;" id="navwarp">
+                </div>
+                <div class="navcontent" style="display: none;">
+                    <div class="navcenter">
+                        <a href="../index.html" class="logo">
+                            <i class="logo-icon"></i>
+                            <i class="i-1 xin"></i>
+                            <i class="i-1 yue"></i>
+                            <i class="i-1 ju"></i>
+                            <i class="i-1 lei"></i>
+                            <i class="i-1 bu"></i>
+                            <i class="text"></i>
+                            <div class="lightBox"></div>
+                        </a>
+                        <ul class="list">
+                            <li>
+                                <a href="../心悦俱乐部-游戏特权/index.html" class="navlist-link">
+                                    <i class="games"></i>
+                                    <span>海量礼包 专属福利</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-G分特权/upload/privilege.html" class="navlist-link">
+                                    <i class="gf"></i>
+                                    <span>好礼兑换 处处惊喜</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-线下特权/offline.html" class="navlist-link">
+                                    <i class="xia"></i>
+                                    <span>专属活动 释放热爱</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-生活特权/index.Life privileges.html" class="navlist-link">
+                                    <i class="life"></i>
+                                    <span>专属活动 释放热爱</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-服务特权/xinyue.html" class="navlist-link">
+                                    <i class="fu"></i>
+                                    <span>专业服务贴心陪伴</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-创奇悦享会/index.html" class="navlist-link">
+                                    <i class="chuanqi"></i>
+                                    <span>你的传奇你的悦享</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+      </header>
+
+                <!-- 登录 -->
+                <div class="qcwx-login" id="qcwx-login" style="display: none;">
+                    <div class="qcwx-login-cover"></div>
+                    <div class="qcwx-login-frame qcwx-active-qc">
+                        <div class="qcwx-tabs">
+                            <a href="javascript:void(0)" class="qc-tab" data-tab="qc"><i
+                                    class="ico-qc-logo"></i><span>QQ账号登录</span></a>
+                            <a href="javascript:void(0)" class="wx-tab" data-tab="wx"><i
+                                    class="ico-wx-logo"></i><span>微信账号登录</span></a> <a href="javascript:void(0)"
+                                class="qcwxtab-close">×</a> </div>
+                        <div class="qcwx-tips">微信和QQ是两个独立账号，账号信息不互通</div>
+                        <div class="qcwx-frame">
+                            <div id="qcwx-frame-qc-div" class="qcwx-frame-qc-div"><iframe
+                                    src="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;state=STATE&amp;client_id=101478665&amp;redirect_uri=https%3A%2F%2Fxinyue.qq.com%2Fcomm-htdocs%2Flogin%2Fqc_redirect.html%3Fparent_domain%3Dhttps%253A%252F%252Fxinyue.qq.com"
+                                    frameborder="0" class="qcwx-frame-qc"></iframe></div>
+                            <div id="qcwx-frame-wx-div" class="qcwx-frame-wx-div"><iframe
+                                    src="https://open.weixin.qq.com/connect/qrconnect?appid=wx5a3bbeac0d87c75a&amp;scope=snsapi_login&amp;redirect_uri=https%3A%2F%2Fxinyue.qq.com%2Fcomm-htdocs%2Fmilo_mobile%2Fwxlogin.html%3Fappid%3Dwx5a3bbeac0d87c75a%26sServiceType%3Dxinyue%26originalUrl%3Dhttps%253A%252F%252Fxinyue.qq.com%252F%2523%252F&amp;state=1&amp;login_type=jssdk&amp;self_redirect=true&amp;styletype=&amp;sizetype=&amp;bgcolor=&amp;rst=&amp;style=black"
+                                    frameborder="0" scrolling="no" width="300px" height="400px"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+      <!-- 主体部分 -->
+    <div class="main">
+        <div class="page1">
+        <div class="gapssTitle"></div>
+        <div class="animateWrap">
+            <i class="animateWrap-mask"></i>
+            <div class="download-animate">
+                <p class="iconbg1 spr-icon1"></p>
+                <p class="iconbg2 spr-icon1"></p>
+                <p class="iconbg3 spr-icon1"></p>
+                <p class="iconbg4 spr-icon2"></p>
+                <p class="iconbg5 spr-icon2"></p>
+                <p class="iconbg6 spr-icon2"></p>
+                <p class="iconbg7 spr-icon3"></p>
+                <p class="iconbg8 spr-icon3"></p>
+                <p class="iconbg9 spr-icon3"></p>
+            </div>
+        </div>
+        <div class="animateWrap-border"></div>
+        <!-- <p class="page1-zz"></p> -->
+        <p class="p1-tit">心悦V3会员专享，终极游戏福利限量内测中</p>
+        </div>
+        <!-- VIP窗口 -->
+        <div class="page2">
+            <div class="vip">
+                <div class="content1">   
+                    <i class="icon1"></i>
+                    <p>未登入</p>
+                    <a href="javascript:void(0)"> </a>
+                </div>
+                <div class="lightBox">
+                    <div class="light"></div>
+                 </div>
+               
+            </div>
+        
+        </div>
+        <!-- 文本内容 -->
+        <div class="text">
+            <h2>
+                <span>心悦V3</span>
+                会员，通过心悦App下载并进入游戏，即可激活<br/>
+                <span>G-PASS</span>
+                身份，独享以下特权：
+           </h2>
+        </div>
+        <!-- 六大特权结构 -->
+        <div class="tq">
+            <ul>
+                <li>
+                    <i class="i1"></i>
+                    <h3>直送VIP</h3>
+                    <p>享游戏永久VIP身份</p>
+                </li>
+                 <li>
+                    <i class="i2"></i>
+                    <h3>三重礼包</h3>
+                    <p>下载礼、成长礼、周常礼</p>
+                </li>
+                 <li>
+                    <i class="i3"></i>
+                    <h3>专属标识</h3>
+                    <p>游戏尊贵外显</p>
+                </li>
+                 <li>
+                    <i class="i4"></i>
+                    <h3>高额返利</h3>
+                    <p>累计充值享独家返利</p>
+                </li>
+                 <li>
+                    <i class="i5"></i>
+                    <h3>组团享豪礼</h3>
+                    <p>获战友礼包、享团队返利</p>
+                </li>
+                 <li>
+                    <i class="i6"></i>
+                    <h3>抢先试玩</h3>
+                    <p>享抢先试玩、创角机会</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 最后的一群方块li -->
+        <div class="page3">
+            <h4>当前G-PASS限量内测中，已开放G-PASS特权的游戏共 <span>53</span> 款</h4>
+            <ul>
+             <li>
+                 <div class="img">
+                    <img src="./images/01.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>雪鹰领主</h5>
+                        <p>腾讯2019收官大战</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/02.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>猎人手游</h5>
+                        <p>官方正版动作手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/03.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>龙族幻想</h5>
+                        <p>腾讯2019年旗舰级RPG大作</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/04.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>我的起源</h5>
+                        <p>生存，为了文明的复苏</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/05.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>狐妖小红娘</h5>
+                        <p>3D国风二次元经典</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/06.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>龙珠最强之战</h5>
+                        <p>正版龙珠授权动作手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/07.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>多多自走棋</h5>
+                        <p>下棋一时爽，多多下棋一直爽</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/08.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>食物语</h5>
+                        <p>中华美食拟人女性向游戏</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/09.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>王牌战士</h5>
+                        <p>热血漫多角色射击游戏</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/10.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>执剑之刻</h5>
+                        <p>和风浪漫陪伴养成手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/11.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>乐高无限</h5>
+                        <p>乐高正版授权沙盒游戏</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/12.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>权利的游戏:凛冬将至</h5>
+                        <p>HBO正版授权战争策略手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/13.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>跑跑卡丁车手游</h5>
+                        <p>3D竞速正版手游 重归赛道 焕新出发</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/14.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>魂斗罗: 归来</h5>
+                        <p>经典IP 横版动作射击手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/15.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>拉结尔</h5>
+                        <p>暗黑ARPG手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/16.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>剑网3: 指尖江湖</h5>
+                        <p>剑网3唯一正版手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/17.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>妖精的尾巴</h5>
+                        <p>正版IP手游热血来袭</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/18.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>云梦四时歌</h5>
+                        <p>国风战斗觉醒手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/19.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>三生三世十里桃花</h5>
+                        <p>三生三世十里桃花正版唯美休闲手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/20.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>蓝月传奇</h5>
+                        <p>高爆率快节奏PK手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/21.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>无尽远征</h5>
+                        <p>手绘卷轴奇幻MMO手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/22.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>腾讯欢乐捕鱼</h5>
+                        <p>休闲型捕鱼手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/23.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>一起来捉妖</h5>
+                        <p>腾讯首款AR探索手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/24.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>QQ飞车手游</h5>
+                        <p>官方正版 极速漂移</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/25.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>全民主公2</h5>
+                        <p>塔防策略经典玩法  传奇武将合力征战</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/26.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>魔法门之英雄无敌</h5>
+                        <p>正版卡牌策略手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/27.jpg" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>龙珠激斗</h5>
+                        <p>七龙珠正版手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+             <li>
+                 <div class="img">
+                    <img src="./images/28.png" alt="">
+                 </div>
+                 <div class="textbox">
+                     <div class="bd">
+                        <h5>拳皇98终极之战OL</h5>
+                        <p>SNK正版授权拳皇卡牌手游</p>
+                     </div>
+                     <a href="#">了解改游戏G-PASS特权&nbsp;&nbsp;&gt;</a>
+                 </div>
+             </li>
+          
+            
+            
+          
+            </ul>
+            <div class="bg-fd"></div>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <footer>
+        <div class="footerSocial">
+            <a href="javascript:;" title="心悦App" class="socialIcon ">
+                <i class="socialImg s-appDown"></i>
+                <i class="socialIcons socialIcon-joyClubApp"></i>
+                心悦App
+            </a> <a href="javascript:;" title="微信公众号" class="socialIcon ">
+                <i class="socialImg s-weChat"></i>
+                <i class="socialIcons socialIcon-wechat"></i>
+                微信公众号
+            </a>
+            <a href="javascript:;" title="手Q公众号" class="socialIcon ">
+                <i class="socialImg s-qq"></i>
+                <i class="socialIcons socialIcon-qq"></i>
+                手Q公众号
+            </a> <a href="//weibo.com/txjoyclub" target="_blank" title="新浪微博" class="socialIcon ">
+                <i class="socialImg s-sina"></i>
+                <i class="socialIcons socialIcon-sina"></i>
+                新浪微博
+            </a>
+            <a href="javascript:;" title="心悦热线" class="socialIcon ">
+                <i class="socialImg s-hotline"></i>
+                <i class="socialIcons socialIcon-joyClubHotline"></i>
+                心悦热线
+            </a>
+            <a href="javascript:;" title="帮助中心" class="socialIcon ">
+                <i class="socialIcons socialIcon-helpCenter"></i>
+                帮助中心
+            </a>
+        </div>
+        <div class="wrap_ieg">
+            <p><a href="//ieg.tencent.com" target="_blank">腾讯互动娱乐</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/contract.shtml" target="_blank">服务条款</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/privacy_guide.shtml?ADTAG=gamepcbottom" target="_blank">隐私保护指引</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/privacy_guide_children.shtml?ADTAG=gamepcbottom"
+                    target="_blank">儿童隐私保护指引</a>&nbsp;|&nbsp;
+                <a href="https://careers.tencent.com/" target="_blank">腾讯游戏招聘</a>&nbsp;|&nbsp;
+                <a href="//kf.qq.com/" target="_blank">腾讯游戏客服</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/web201910/introduce.html?ADTAG=gamepcbottom"
+                    target="_blank">游戏列表</a>&nbsp;|&nbsp;
+                <a href="https://jiazhang.qq.com/jz/home.html?ADTAG=gamepcbottom"
+                    target="_blank">成长守护平台</a>&nbsp;|&nbsp;
+                <a href="https://www.tencent.com/zh-cn/partnership.html" target="_blank">广告服务及商务合作</a></p>
+            <p class="e copyright_en">COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p class="copyright_zh"><a href="//www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司
+                    版权所有</a></p>
+        </div>
+        <div class="codeFixed"></div>
+        <div class="assitanceWrap active" style="bottom: 67px; top: auto;">
+            <a href="javascript:void(0)" title="回到顶部" class=" goTop js-goTop assitanceLink"></a>
+            <a href="#" title="回到首页" class="assitanceLink home"></a>
+        </div>
+    </footer>
+
+    <!-- 遮罩层 -->
+    <div class="zheZhao"> </div>
+    <!-- 二维码页面 -->
+    <div class="erWeiMa">
+        <img src="./images/i7.png" alt="">
+        <i class="i7"></i>
+        <a href="javascript:void(0)" id="btn1">
+            <i class="i8" id="i8"></i>
+        </a>
+    </div>
+    
+    <!-- js引入的文件 -->
+    <script src="./js/index.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

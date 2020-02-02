@@ -1,0 +1,72 @@
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+img,
+input,
+h1,
+h2,
+h3,
+h4,
+i {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* 将所有的标签转换成内减模型的盒子 */
+}
+h1,
+h2,
+h3,
+h4,
+h5,h6{
+	font-weight: 400;
+	
+}
+img {
+	vertical-align: middle;
+	border: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: #5593f9;
+	font-weight: 500;
+}
+
+i,em {
+	font-style: normal;
+}
+
+li{
+	list-style: none;
+}
+em{
+	text-decoration: none;
+}
+
+body {
+	font-size: 14px;
+	/* line-height: 1; */
+	background-color:#0e0e0e;
+	overflow-x: hidden;
+}
+
+.clearfix::after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+}

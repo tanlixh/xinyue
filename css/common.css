@@ -1,0 +1,818 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #3a3d4b;
+}
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@keyframes logoLight {
+  to {
+    transform: rotate(-25deg) translate3d(500px, 0, 0);
+  }
+}
+
+body {
+  width: calc(100vw - 5px);
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+header nav {
+  width: 1200px;
+  height: 80px;
+  position: relative;
+}
+
+header nav .logo {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+}
+
+header nav .logo a {
+  display: block;
+  width: 218px;
+  height: 54px;
+  background: url("../img/sprite.png") no-repeat -18px -425px;
+}
+
+header nav .login {
+  position: absolute;
+  right: 116px;
+  top: 23px;
+}
+
+header nav .login a {
+  width: 122px;
+  height: 42px;
+  display: block;
+  border: 2px solid #dab77e;
+  font-size: 20px;
+  color: #dab77e;
+  padding: 6px 39px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: white;
+  background-color: transparent;
+}
+
+header nav .login a:hover {
+  background: #dab77e;
+  color: #fff;
+}
+
+header nav .navBtn {
+  position: absolute;
+  top: 18px;
+  left: 59%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  margin-left: 450px;
+}
+
+header nav .navBtn:before {
+  content: "";
+  position: absolute;
+  transition: background 0.15s linear 0s;
+  top: -18px;
+  left: -42px;
+  width: 120px;
+  height: 90px;
+  cursor: pointer;
+  z-index: 9;
+}
+
+header nav .navBtn i {
+  position: absolute;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  height: 3px;
+  width: 36px;
+  background: linear-gradient(90deg, #deba80, #a8793e);
+  transform: translate(4px);
+  will-change: transform;
+  z-index: 9;
+}
+
+header nav .navBtn i:nth-child(even) {
+  margin-left: -2px;
+  transform: translate(6px);
+}
+
+header nav .navBtn i:nth-child(odd) {
+  margin-left: 2px;
+  transform: translate(-4px);
+}
+
+header nav .navBtn i:nth-child(1) {
+  top: 9px;
+  transition-delay: 0.03s;
+}
+
+header nav .navBtn i:nth-child(2) {
+  top: 18px;
+  transition-delay: 0.06s;
+}
+
+header nav .navBtn i:nth-child(3) {
+  top: 27px;
+  transition-delay: 0.09s;
+}
+
+header nav .navBtn i:nth-child(4) {
+  top: 36px;
+  transition-delay: 0.15s;
+}
+
+header nav .navBtn:hover i:nth-child(even) {
+  margin-left: 2px;
+  transform: translate(-4px);
+}
+
+header nav .navBtn:hover i:nth-child(odd) {
+  margin-left: -2px;
+  transform: translate(6px);
+}
+
+.other {
+  background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.other nav .logo a {
+  background: url("../img/sprite.png") no-repeat -274px -423px;
+}
+
+.other nav .login a {
+  width: 122px;
+  height: 42px;
+  display: block;
+  border: 2px solid #dab77e;
+  font-size: 20px;
+  color: #dab77e;
+  padding: 6px 39px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: white;
+  background-color: transparent;
+}
+
+.other nav .login a:hover {
+  background: #dab77e;
+  color: #fff;
+}
+
+.other nav .navBtn {
+  position: absolute;
+  top: 18px;
+  left: 59%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  margin-left: 450px;
+}
+
+.other nav .navBtn:before {
+  content: "";
+  position: absolute;
+  transition: background 0.15s linear 0s;
+  top: -18px;
+  left: -42px;
+  width: 120px;
+  height: 90px;
+  background: linear-gradient(90deg, #debb81, #a7793d);
+  cursor: pointer;
+  z-index: 9;
+}
+
+.other nav .navBtn i {
+  background: #fff;
+}
+
+#zhixian {
+  background: linear-gradient(90deg, #deba80, #a8793e);
+  z-index: 2000;
+  cursor: pointer;
+}
+
+#zhixian:hover {
+  width: 46px;
+}
+
+#zhixian::after {
+  position: absolute;
+  z-index: 20000;
+  content: "CLOSE";
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  right: 0;
+  top: 50%;
+  color: #a27748;
+  height: 46px;
+  line-height: 46px;
+  padding-left: 18px;
+  transform: translate(90%, -50%);
+}
+
+.navwrap {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+}
+
+.navcontent {
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.navcontent .navcenter {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.navcontent .navcenter .logo {
+  display: block;
+  position: absolute;
+  width: 218px;
+  height: 54px;
+  left: 50%;
+  top: 100px;
+  margin-left: -109px;
+}
+
+.navcontent .navcenter .logo i {
+  display: block;
+  background: url('../img/sprite.png') no-repeat;
+  position: absolute;
+}
+
+.navcontent .navcenter .logo .logo-icon {
+  left: 0;
+  top: 0;
+  width: 61px;
+  height: 45px;
+  background-position: -13px -425px;
+}
+
+.navcontent .navcenter .logo .i-1 {
+  top: 20px;
+  width: 27px;
+  height: 23px;
+}
+
+.navcontent .navcenter .logo .xin {
+  left: 69px;
+  background-position: -342px -443px;
+}
+
+.navcontent .navcenter .logo .yue {
+  left: 99px;
+  background-position: -373px -443px;
+}
+
+.navcontent .navcenter .logo .ju {
+  left: 129px;
+  background-position: -404px -443px;
+}
+
+.navcontent .navcenter .logo .lei {
+  left: 159px;
+  background-position: -434px -443px;
+}
+
+.navcontent .navcenter .logo .bu {
+  left: 189px;
+  background-position: -466px -443px;
+}
+
+.navcontent .navcenter .logo .text {
+  width: 180px;
+  height: 12px;
+  background-position: -343px -430px;
+  top: 4px;
+  left: 70px;
+}
+
+.navcontent .navcenter .lightBox {
+  width: 222px;
+  height: 45px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.navcontent .navcenter .lightBox:before {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: rotate(-25deg);
+  height: 300px;
+  width: 20px;
+  background: #fff;
+  opacity: 0.8;
+}
+
+.navcontent .navcenter .lightBox:after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+  left: -150px;
+  top: 0;
+  transform: rotate(-25deg);
+  height: 300px;
+  width: 20px;
+  background: #fff;
+  opacity: 0.8;
+  animation: logoLight 0.8s 0.4s linear forwards;
+}
+
+.navcontent .navcenter .lightBox:hover::before {
+  animation: logoLight 0.8s 0s linear forwards;
+}
+
+.navcontent .navcenter .list {
+  display: block;
+  width: 100%;
+  padding: 260px 0 100px;
+  opacity: 1;
+}
+
+.navcontent .navcenter .list li {
+  float: left;
+  width: 200px;
+  height: 44px;
+  transition: all 0.5s;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.navcontent .navcenter .list a {
+  color: #999;
+  font-size: 14px;
+}
+
+.navcontent .navcenter .list a i {
+  display: block;
+  width: 134px;
+  height: 20px;
+  margin: 0 auto;
+  background: url('../img/sprite.png') no-repeat;
+}
+
+.navcontent .navcenter .list a .games {
+  background-position: -134px 0;
+}
+
+.navcontent .navcenter .list a .gf {
+  background-position: -536px 0;
+}
+
+.navcontent .navcenter .list a .xia {
+  background-position: -804px 0;
+}
+
+.navcontent .navcenter .list a .life {
+  background-position: -268px 0;
+}
+
+.navcontent .navcenter .list a .fu {
+  background-position: -402px 0;
+}
+
+.navcontent .navcenter .list a .chuanqi {
+  background-position: -670px 0;
+}
+
+.navcontent .navcenter .list li:hover i {
+  background-position-y: -22px;
+}
+
+footer {
+  height: 420px;
+  width: 100%;
+  background: url("../img/footer.jpg");
+  background-size: 100%;
+}
+
+footer .footerSocial {
+  text-align: center;
+  width: 100%;
+  height: 267px;
+  padding-top: 140px;
+  display: inline-block;
+}
+
+footer .footerSocial .socialIcon {
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 100px;
+  color: #555;
+  margin: 0 25px;
+  transition: all 0.15s linear 0s;
+  font-size: 20px;
+  display: inline-block;
+}
+
+footer .footerSocial .socialIcon:hover {
+  color: #dab77e;
+}
+
+footer .footerSocial .socialIcon:hover .socialIcons {
+  background-position-y: -148px;
+}
+
+footer .footerSocial .socialIcon:hover .socialImg {
+  opacity: 1;
+  transform: translate(-50%);
+}
+
+footer .footerSocial .socialIcon .socialImg {
+  display: block;
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  pointer-events: none;
+  left: 50%;
+  top: -100px;
+  opacity: 0;
+  transform: translate(-50%, -20px);
+  transition: all 0.15s linear 0s;
+  background-size: 100%;
+  border: 5px solid #d9b57a;
+  border-radius: 4px;
+}
+
+footer .footerSocial .socialIcon .s-appDown {
+  position: absolute;
+  background-image: url(../img/erweima01.jpg);
+}
+
+footer .footerSocial .socialIcon .s-weChat {
+  background-image: url(../img/erweima02.jpeg);
+}
+
+footer .footerSocial .socialIcon .s-qq {
+  background-image: url(../img/erweima03.jpg);
+}
+
+footer .footerSocial .socialIcon .s-sina {
+  background-image: url(../img/erweima04.jpg);
+}
+
+footer .footerSocial .socialIcon .s-hotline {
+  background-image: url(../img/erweima05.jpeg);
+}
+
+footer .footerSocial .socialIcon .socialIcons {
+  display: block;
+  height: 45px;
+  width: 56px;
+  transition: all 0.15s linear 0s;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #555;
+  margin: 0 25px;
+  font-size: 20px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  margin: 0 auto 20px;
+}
+
+footer .footerSocial .socialIcon .socialIcon-joyClubApp {
+  background-position: -418px -203px;
+}
+
+footer .footerSocial .socialIcon .socialIcon-wechat {
+  background-position: -362px -203px;
+}
+
+footer .footerSocial .socialIcon .socialIcon-qq {
+  background-position: -306px -203px;
+}
+
+footer .footerSocial .socialIcon .socialIcon-sina {
+  background-position: -642px -203px;
+}
+
+footer .footerSocial .socialIcon .socialIcon-joyClubHotline {
+  background-position: -474px -203px;
+}
+
+footer .footerSocial .socialIcon .socialIcon-helpCenter {
+  background-position: -586px -203px;
+}
+
+footer .wrap_ieg {
+  padding-top: 54px;
+  font-size: 12px;
+  color: #6c6c6c;
+  height: 153px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+footer .wrap_ieg a {
+  color: #6c6c6c;
+}
+
+footer .wrap_ieg a:hover {
+  color: #fff;
+}
+
+footer .codeFixed {
+  position: fixed;
+  right: 120px;
+  bottom: 0;
+  width: 194px;
+  height: 246px;
+  background: url(../img/codeFixed.png) no-repeat;
+  z-index: 60;
+}
+
+footer .assitanceWrap {
+  position: fixed;
+  right: 20px;
+  left: auto;
+  bottom: 63px;
+  z-index: 60;
+  opacity: 0;
+  transition: opacity 0.3s linear 0s;
+  pointer-events: none;
+}
+
+footer .assitanceWrap .assitanceLink {
+  position: relative;
+  display: block;
+  height: 76px;
+  width: 76px;
+  background: linear-gradient(90deg, #3a3d4b, #3a3d4b);
+  margin: 13px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s linear;
+}
+
+footer .assitanceWrap .assitanceLink:hover {
+  background: linear-gradient(90deg, #ecc78f, #cda468);
+  color: #fff;
+}
+
+footer .assitanceWrap .goTop::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 76px;
+  height: 76px;
+  background-image: url("../img/sprite.png");
+  background-position: 3px -487px;
+}
+
+footer .assitanceWrap .home::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 76px;
+  height: 76px;
+  background-image: url("../img/sprite.png");
+  background-position: -73px -487px;
+}
+
+footer .active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.qcwx-login-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+  background: rgba(255, 255, 255, .4);
+
+}
+
+
+
+
+
+.qcwx-tabs .qc-tab,
+.qcwx-tabs .wx-tab {
+  cursor: pointer;
+  display: inline-block;
+  width: 50%;
+  /* float: left; */
+  text-align: center;
+  font-size: 18px;
+  background-color: #f1f1f1;
+  color: #b1b1b1;
+  text-decoration: none;
+}
+
+.qcwx-login {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: none;
+  z-index: 999;
+}
+
+.qcwx-login-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.qcwx-login-frame {
+  width: 750px;
+  height: 420px;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  z-index: 9999;
+  margin-left: -375px;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  border-radius: 5px 5px 0px 0px
+}
+
+.qcwx-tabs {
+  line-height: 40px;
+  position: absolute;
+  z-index: 101;
+  width: 100%
+}
+
+.qcwx-tabs .qc-tab,
+.qcwx-tabs .wx-tab {
+  cursor: pointer;
+  display: inline-block;
+  width: 50%;
+  /* float: left; */
+  text-align: center;
+  font-size: 18px;
+  background-color: #f1f1f1;
+  color: #b1b1b1;
+  text-decoration: none
+}
+
+.qcwx-active-qc a.qc-tab {
+  color: #fff;
+  background-color: #51b7ec
+}
+
+.qcwx-active-wx a.wx-tab {
+  color: #fff;
+  background-color: #4ab218
+}
+
+.qcwx-tabs .qcwxtab-close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-decoration: none;
+  color: grey;
+  font-size: 25px;
+  line-height: 25px;
+  display: inline-block;
+  padding: 0px 5px;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid
+}
+
+.qcwx-active-qc .qcwx-tabs .qcwxtab-close {
+  border-color: #e0dcdc
+}
+
+.qcwx-active-wx .qcwx-tabs .qcwxtab-close {
+  border-color: #8BC34A;
+  color: #d4d2d2
+}
+
+.qcwx-tabs .qcwxtab-close:hover {
+  font-weight: bold
+}
+
+.qcwx-tips {
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #a2a2a2;
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  z-index: 999;
+  background-color: #fff
+}
+
+.qcwx-frame {
+  width: 750px;
+  height: 410px;
+  position: absolute;
+  overflow: hidden
+}
+
+.qcwx-frame div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  display: none
+}
+
+.qcwx-frame div iframe {
+  width: 100%;
+  height: 100%
+}
+
+.qcwx-active-qc div.qcwx-frame-qc-div {
+  display: block
+}
+
+.qcwx-active-wx div.qcwx-frame-wx-div {
+  display: block
+}
+
+i.ico-qc-logo,
+i.ico-wx-logo {
+  display: inline-block;
+  height: 23px;
+  vertical-align: middle;
+  margin: 0px 5px;
+  margin-top: -4px;
+  background: url("img/sprite_login.png") no-repeat
+}
+
+i.ico-qc-logo {
+  width: 20px
+}
+
+i.ico-wx-logo {
+  width: 24px
+}
+
+.qcwx-active-wx i.ico-qc-logo {
+  background-position: -180px -90px
+}
+
+.qcwx-active-wx i.ico-wx-logo {
+  background-position: -250px -90px
+}
+
+.qcwx-active-qc i.ico-qc-logo {
+  background-position: -200px -90px
+}
+
+.qcwx-active-qc i.ico-wx-logo {
+  background-position: -220px -90px
+}
+
+div#qcwx-frame-wx-div {
+  top: 20px
+}

@@ -1,0 +1,72 @@
+
+
+@keyframes lightMove {
+    0%{
+        left: -140px;
+    }
+    100% {
+        left: 1000px;
+    }
+}
+
+         @keyframes move {
+            100% {
+                background-position-x: -5555px;
+            }
+        }
+        .page1 .animateWrap .download-animate .spr-icon1.iconbg1 {
+            background-position-y: -266px;
+            animation-duration: 95s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon1.iconbg2 {
+            background-position-y: -134px;
+            animation-duration: 125s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon1.iconbg3 {
+            background-position-y: -2px;
+            animation-duration: 100s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon2.iconbg4 {
+            background-position-y: -266px;
+            animation-duration: 115s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon2.iconbg5 {
+            background-position-y: -134px;
+            animation-duration: 100s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon2.iconbg6 {
+            background-position-y: -2px;
+            animation-duration: 105s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon3.iconbg7 {
+            background-position-y: -266px;
+            animation-duration: 125s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon3.iconbg8 {
+            background-position-y: -134px;
+            animation-duration: 110s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon3.iconbg9 {
+            background-position-y: -2px;
+            animation-duration: 90s;
+        }
+        .page1 .animateWrap .download-animate
+        .spr-icon1 {
+            background: url('../images/spr-icon1.png') repeat-x;
+        }
+
+        .spr-icon2 {
+            background: url('../images/spr-icon2.png') repeat-x;
+        }
+
+        .spr-icon3 {
+            background: url('../images/spr-icon3.png') repeat-x;
+        }

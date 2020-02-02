@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>腾讯游戏-心悦俱乐部</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/privilege.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+</head>
+<style>
+    @keyframes move {
+        0% {
+            top: 0;
+        }
+
+
+        100% {
+            top: -200px;
+        }
+    }
+
+    .and {
+        animation: 8s move infinite linear;
+    }
+</style>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="w">
+            <nav>
+                <div class="logo"><a href="../../index.html"></a></div>
+                <div class="login"><a href="javascript:void(0)">登录</a></div>
+                <div class="navBtn">
+                    <i></i>
+                    <i class="zhixian"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="navwrap" style="display: none;" id="navwarp">
+                </div>
+                <div class="navcontent" style="display: none;">
+                    <div class="navcenter">
+                        <a href="../../index.html" class="logo">
+                            <i class="logo-icon"></i>
+                            <i class="i-1 xin"></i>
+                            <i class="i-1 yue"></i>
+                            <i class="i-1 ju"></i>
+                            <i class="i-1 lei"></i>
+                            <i class="i-1 bu"></i>
+                            <i class="text"></i>
+                            <div class="lightBox"></div>
+                        </a>
+                        <ul class="list">
+                            <li>
+                                <a href="../../心悦俱乐部-游戏特权/index.html" class="navlist-link">
+                                    <i class="games"></i>
+                                    <span>海量礼包 专属福利</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../心悦俱乐部-G分特权/upload/privilege.html" class="navlist-link">
+                                    <i class="gf"></i>
+                                    <span>好礼兑换 处处惊喜</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../心悦俱乐部-线下特权/offline.html" class="navlist-link">
+                                    <i class="xia"></i>
+                                    <span>专属活动 释放热爱</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../心悦俱乐部-生活特权/index.Life privileges.html" class="navlist-link">
+                                    <i class="life"></i>
+                                    <span>专属活动 品质生活</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../心悦俱乐部-服务特权/xinyue.html" class="navlist-link">
+                                    <i class="fu"></i>
+                                    <span>专业服务贴心陪伴</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../心悦俱乐部-创奇悦享会/index.html" class="navlist-link">
+                                    <i class="chuanqi"></i>
+                                    <span>你的传奇你的悦享</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- <div class="common-bannerTopMask">
+
+    </div>
+    <div class="common-headerWrap">
+        <div class="common-headerContent">
+            <a href="javascript:void(0)" class="common-logo" title="心悦俱乐部-享受不一样的尊贵"></a>
+            <div class="common-login">
+                <a href="javascript:void(0)" id="login-btn" class="commonloginBtn" title="心悦俱乐部-登录">登录</a>
+            </div>
+            <div class="common-navBtn">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+
+    </div> -->
+    <div class="mainWrap ">
+        <div class="gpBanner ">
+            <img src="../img/ia_100000001.jpg">
+        </div>
+        <!-- 公告开始 -->
+        <div class="noticeOut w">
+            <div class="swiper-container noticeWrap ">
+                <div class="title">
+                    现有G分: 0
+                </div>
+                <div class="swiper-wrapperOut" id="notice">
+                    <div class="arr and">
+                        <div class="swiper-slide swiper-slide-next" style="width: 813px; height: 50px;">
+                            <div class="noticeItems">
+                                <span class="noticeTag">提醒</span>
+                                <a href="javascript:;" class="noticeItems-text">
+                                    <span class="noticeContent tx_content">
+                                        你最近没有将过期G分哟，参与活动赚G分吧~
+                                    </span>
+                                    <i class="soli"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 813px; height: 50px;">
+                            <div class="noticeItems">
+                                <span class="noticeTag">今天</span>
+                                <a href="javascript:;" class="noticeItems-text">
+                                    <span class="noticeContent tx_content">
+                                        快去心悦App赚取G分吧~！
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 813px; height: 50px;">
+                            <div class="noticeItems">
+                                <span class="noticeTag">提醒</span>
+                                <a href="javascript:;" class="noticeItems-text">
+                                    <span class="noticeContent tx_content">
+                                        你最近没有将过期G分哟，参与活动赚G分吧~
+                                    </span>
+                                    <i class="soli"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 813px; height: 50px;">
+                            <div class="noticeItems">
+                                <span class="noticeTag">今天</span>
+                                <a href="javascript:;" class="noticeItems-text">
+                                    <span class="noticeContent tx_content">
+                                        快去心悦App赚取G分吧~！
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 813px; height: 50px;">
+                            <div class="noticeItems">
+                                <span class="noticeTag">提醒</span>
+                                <a href="javascript:;" class="noticeItems-text">
+                                    <span class="noticeContent tx_content">
+                                        你最近没有将过期G分哟，参与活动赚G分吧~
+                                    </span>
+                                    <i class="soli"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 813px; height: 50px;">
+                            <div class="noticeItems">
+                                <span class="noticeTag">今天</span>
+                                <a href="javascript:;" class="noticeItems-text">
+                                    <span class="noticeContent tx_content">
+                                        快去心悦App赚取G分吧~！
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+                <!-- 登录 -->
+                <!-- <div class="qcwx-login" id="qcwx-login" style="display: none;">
+                    <div class="qcwx-login-cover"></div>
+                    <div class="qcwx-login-frame qcwx-active-qc">
+                        <div class="qcwx-tabs">
+                            <a href="javascript:void(0)" class="qc-tab" data-tab="qc"><i
+                                    class="ico-qc-logo"></i><span>QQ账号登录</span></a>
+                            <a href="javascript:void(0)" class="wx-tab" data-tab="wx"><i
+                                    class="ico-wx-logo"></i><span>微信账号登录</span></a> <a href="javascript:void(0)"
+                                class="qcwxtab-close">×</a> </div>
+                        <div class="qcwx-tips">微信和QQ是两个独立账号，账号信息不互通</div>
+                        <div class="qcwx-frame">
+                            <div id="qcwx-frame-qc-div" class="qcwx-frame-qc-div"><iframe
+                                    src="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;state=STATE&amp;client_id=101478665&amp;redirect_uri=https%3A%2F%2Fxinyue.qq.com%2Fcomm-htdocs%2Flogin%2Fqc_redirect.html%3Fparent_domain%3Dhttps%253A%252F%252Fxinyue.qq.com"
+                                    frameborder="0" class="qcwx-frame-qc"></iframe></div>
+                            <div id="qcwx-frame-wx-div" class="qcwx-frame-wx-div"><iframe
+                                    src="https://open.weixin.qq.com/connect/qrconnect?appid=wx5a3bbeac0d87c75a&amp;scope=snsapi_login&amp;redirect_uri=https%3A%2F%2Fxinyue.qq.com%2Fcomm-htdocs%2Fmilo_mobile%2Fwxlogin.html%3Fappid%3Dwx5a3bbeac0d87c75a%26sServiceType%3Dxinyue%26originalUrl%3Dhttps%253A%252F%252Fxinyue.qq.com%252F%2523%252F&amp;state=1&amp;login_type=jssdk&amp;self_redirect=true&amp;styletype=&amp;sizetype=&amp;bgcolor=&amp;rst=&amp;style=black"
+                                    frameborder="0" scrolling="no" width="300px" height="400px"></iframe></div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+    <!-- 公告结束 -->
+
+    <div class="gpRights ">
+        <div class="gpTitle-layer w">
+            <i class="left"></i>
+            <h4 class="gpTitle-big">
+
+                G分随心玩，处处有惊喜
+            </h4>
+            <i class="right"></i>
+
+            <h5 class="gpTitle-small">
+                使用G分，免费玩转以下特权！
+            </h5>
+        </div>
+        <div class="gpUl-layer">
+            <ul class="gpUl">
+                <li class="gpLi" id="mm_box">
+                    <a href="javascript:void(0)">
+                        <i class="gp_i"></i>
+                        <div class="gpText">
+                            <img src="../img/ia_100000002.png" alt="" class="love1">
+                        </div>
+                        <p class="gpSubText">心悦猫咪，免费领养</p>
+                        <img class="gpLi-img" src="../img/ia_100000003.png">
+                        <i class="gp_ii"></i>
+                    </a>
+                </li>
+                <li class="gpLi" id="rr_box">
+                    <a href="javascript:void(0)">
+                        <i class="gp_i"></i>
+                        <div class="gpText">
+                            <img src="../img/ia_100000004.png" alt="" class="love1">
+                        </div>
+                        <p class="gpSubText">心悦猫咪，免费领养</p>
+                        <img class="gpLi-img" src="../img/ia_100000005.png">
+                        <i class="gp_ii"></i>
+                    </a>
+                </li>
+                <li class="gpLi" id="wz_box">
+                    <a href="javascript:void(0)">
+                        <i class="gp_i"></i>
+                        <div class="gpText">
+                            <img src="../img/ia_100000006.png" alt="" class="love1">
+                        </div>
+                        <p class="gpSubText">心悦猫咪，免费领养</p>
+                        <img class="gpLi-img" src="../img/ia_100000007.png">
+                        <i class="gp_ii"></i>
+                    </a>
+                </li>
+                <li class="gpLi" id="gf_box">
+                    <a href="javascript:void(0)">
+                        <i class="gp_i"></i>
+                        <div class="gpText">
+                            <img src="../img/ia_100000008.png" alt="" class="love1">
+                        </div>
+                        <p class="gpSubText">心悦猫咪，免费领养</p>
+                        <img class="gpLi-img" src="../img/ia_100000009.png">
+                        <i class="gp_ii"></i>
+                    </a>
+                </li>
+                <li class="gpLi" id="zz_box">
+                    <a href="javascript:void(0)">
+                        <i class="gp_i"></i>
+                        <div class="gpText">
+                            <img src="../img/ia_100000010.png" alt="" class="love1">
+                        </div>
+                        <p class="gpSubText">心悦猫咪，免费领养</p>
+                        <img class="gpLi-img" src="../img/ia_100000011.png">
+                        <i class="gp_ii"></i>
+                    </a>
+                </li>
+                <li class="gpLi" id="xy_box">
+                    <a href="javascript:void(0)">
+                        <i class="gp_i"></i>
+                        <div class="gpText">
+                            <img src="../img/ia_100000012.png" alt="" class="love1">
+                        </div>
+                        <p class="gpSubText">心悦猫咪，免费领养</p>
+                        <img class="gpLi-img" src="../img/ia_100000013.png">
+                        <i class="gp_ii"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="gpDetail">
+        <div class="footer-qrcode">
+
+        </div>
+    </div>
+
+    <!-- 积分弹层 -->
+    <div class="actModal" id="sc_tk">
+        <div class="actModal-content gpointRules">
+            <a href="javascript:void(0)" class="actModalClose js-actModalClose"></a>
+            <div class="actModal-body">
+                <div class="shopText">
+                    <div class="imgLayer title_plaer">
+                        <img src="../img/shop-img1.png" alt="">
+                    </div>
+                    <p class="shopText-content">
+
+                    </p>
+                    <div class="imgLayer shopText-code">
+                        <img src="../img/ia_100000020.png" alt="">
+                        <p class="text_show">猫咪历练，战斗可获得G分</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actModal" id="sc_tk">
+        <div class="actModal-content gpointRules">
+            <a href="javascript:void(0)" class="actModalClose js-actModalClose"></a>
+            <div class="actModal-body">
+                <div class="shopText">
+                    <div class="imgLayer title_plaer">
+                        <img src="../img/shop-img2.png" alt="">
+                    </div>
+                    <p class="shopText-content">
+
+                    </p>
+                    <div class="imgLayer shopText-code">
+                        <img src="../img/ia_100000020.png" alt="">
+                        <p class="text_show">最高收益200%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actModal" id="sc_tk">
+        <div class="actModal-content gpointRules">
+            <a href="javascript:void(0)" class="actModalClose js-actModalClose"></a>
+            <div class="actModal-body">
+                <div class="shopText">
+                    <div class="imgLayer title_plaer">
+                        <img src="../img/shop-img.png" alt="">
+                    </div>
+                    <p class="shopText-content">
+
+                    </p>
+                    <div class="imgLayer shopText-code">
+                        <img src="../img/ia_100000020.png" alt="">
+                        <p class="text_show">王者荣耀爆款周边热售</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actModal" id="sc_tk">
+        <div class="actModal-content gpointRules">
+            <a href="javascript:void(0)" class="actModalClose js-actModalClose"></a>
+            <div class="actModal-body">
+                <div class="shopText">
+                    <div class="imgLayer title_plaer">
+                        <img src="../img/shop-img4.png" alt="">
+                    </div>
+                    <p class="shopText-content">
+
+                    </p>
+                    <div class="imgLayer shopText-code">
+                        <img src="../img/ia_100000020.png" alt="">
+                        <p class="text_show">官方授权游戏周边免费抢兑</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actModal" id="sc_tk">
+        <div class="actModal-content gpointRules">
+            <a href="javascript:void(0)" class="actModalClose js-actModalClose"></a>
+            <div class="actModal-body">
+                <div class="shopText">
+                    <div class="imgLayer title_plaer">
+                        <img src="../img/shop-img5.png" alt="">
+                    </div>
+                    <p class="shopText-content">
+
+                    </p>
+                    <div class="imgLayer shopText-code">
+                        <img src="../img/ia_100000020.png" alt="">
+                        <p class="text_show">最高可领取57G分，7张免费抽奖券</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actModal" id="sc_tk">
+        <div class="actModal-content gpointRules">
+            <a href="javascript:void(0)" class="actModalClose js-actModalClose"></a>
+            <div class="actModal-body">
+                <div class="shopText">
+                    <div class="imgLayer title_plaer">
+                        <img src="../img/shop-img6.png" alt="">
+                    </div>
+                    <p class="shopText-content">
+
+                    </p>
+                    <div class="imgLayer shopText-code">
+                        <img src="../img/ia_100000020.png" alt="">
+                        <p class="text_show">美好的愿望，有你我来实现</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <footer>
+        <div class="footerSocial">
+            <a href="javascript:;" title="心悦App" class="socialIcon ">
+                <i class="socialImg s-appDown"></i>
+                <i class="socialIcons socialIcon-joyClubApp"></i>
+                心悦App
+            </a> <a href="javascript:;" title="微信公众号" class="socialIcon ">
+                <i class="socialImg s-weChat"></i>
+                <i class="socialIcons socialIcon-wechat"></i>
+                微信公众号
+            </a>
+            <a href="javascript:;" title="手Q公众号" class="socialIcon ">
+                <i class="socialImg s-qq"></i>
+                <i class="socialIcons socialIcon-qq"></i>
+                手Q公众号
+            </a> <a href="//weibo.com/txjoyclub" target="_blank" title="新浪微博" class="socialIcon ">
+                <i class="socialImg s-sina"></i>
+                <i class="socialIcons socialIcon-sina"></i>
+                新浪微博
+            </a>
+            <a href="javascript:;" title="心悦热线" class="socialIcon ">
+                <i class="socialImg s-hotline"></i>
+                <i class="socialIcons socialIcon-joyClubHotline"></i>
+                心悦热线
+            </a>
+            <a href="javascript:;" title="帮助中心" class="socialIcon ">
+                <i class="socialIcons socialIcon-helpCenter"></i>
+                帮助中心
+            </a>
+        </div>
+        <div class="wrap_ieg">
+            <p><a href="//ieg.tencent.com" target="_blank">腾讯互动娱乐</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/contract.shtml" target="_blank">服务条款</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/privacy_guide.shtml?ADTAG=gamepcbottom" target="_blank">隐私保护指引</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/privacy_guide_children.shtml?ADTAG=gamepcbottom"
+                    target="_blank">儿童隐私保护指引</a>&nbsp;|&nbsp;
+                <a href="https://careers.tencent.com/" target="_blank">腾讯游戏招聘</a>&nbsp;|&nbsp;
+                <a href="//kf.qq.com/" target="_blank">腾讯游戏客服</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/web201910/introduce.html?ADTAG=gamepcbottom"
+                    target="_blank">游戏列表</a>&nbsp;|&nbsp;
+                <a href="https://jiazhang.qq.com/jz/home.html?ADTAG=gamepcbottom"
+                    target="_blank">成长守护平台</a>&nbsp;|&nbsp;
+                <a href="https://www.tencent.com/zh-cn/partnership.html" target="_blank">广告服务及商务合作</a></p>
+            <p class="e copyright_en">COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p class="copyright_zh"><a href="//www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司
+                    版权所有</a></p>
+        </div>
+        <div class="codeFixed"></div>
+        <div class="assitanceWrap active" style="bottom: 67px; top: auto;">
+            <a href="javascript:void(0)" title="回到顶部" class=" goTop js-goTop assitanceLink"></a>
+            <a href="../../index.html" title="回到首页" class="assitanceLink home"></a>
+        </div>
+    </footer>
+    <!-- <script src="./lib/jquery-3.4.1.js"></script> -->
+    <!-- <script src="./js/index.js"></script> -->
+
+
+</body>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/新建文本文档.js">
+
+</script>
+<script>
+
+</script>
+
+</html>

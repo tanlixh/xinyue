@@ -1,0 +1,74 @@
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+img,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+section,
+em{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* 将所有的标签转换成内减模型的盒子 */
+}
+
+img {
+	vertical-align: middle;
+	border: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+i,em {
+	font-style: normal;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	background-color: #ffffff;
+	font-size:12px;
+	font-family:'Microsoft Yahei',Arial,Helvetica,sans-serif;
+	letter-spacing: 2px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	letter-spacing: 2px;
+	line-height: 1;
+}
+
+.clearfix::after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+p {
+	display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

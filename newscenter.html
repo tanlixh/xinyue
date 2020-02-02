@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>心悦俱乐部 - 腾讯游戏</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="w">
+            <nav>
+                <div class="logo"><a href="index.html"></a></div>
+                <div class="login"><a href="javascript:void(0)">登录</a></div>
+                <div class="navBtn">
+                    <i></i>
+                    <i class="zhixian"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="navwrap" style="display: none;" id="navwarp">
+                </div>
+                <div class="navcontent" style="display: none;">
+                    <div class="navcenter">
+                        <a href="#" class="logo">
+                            <i class="logo-icon"></i>
+                            <i class="i-1 xin"></i>
+                            <i class="i-1 yue"></i>
+                            <i class="i-1 ju"></i>
+                            <i class="i-1 lei"></i>
+                            <i class="i-1 bu"></i>
+                            <i class="text"></i>
+                            <div class="lightBox"></div>
+                        </a>
+                        <ul class="list">
+                            <li>
+                                <a href="心悦俱乐部-游戏特权/index.html" class="navlist-link">
+                                    <i class="games"></i>
+                                    <span>海量礼包 专属福利</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="心悦俱乐部-G分特权/upload/privilege.html" class="navlist-link">
+                                    <i class="gf"></i>
+                                    <span>好礼兑换 处处惊喜</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="心悦俱乐部-线下特权/offline.html" class="navlist-link">
+                                    <i class="xia"></i>
+                                    <span>专属活动 释放热爱</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="心悦俱乐部-生活特权/index.Life privileges.html" class="navlist-link">
+                                    <i class="life"></i>
+                                    <span>专属活动 释放热爱</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="心悦俱乐部-服务特权/xinyue.html" class="navlist-link">
+                                    <i class="fu"></i>
+                                    <span>专业服务贴心陪伴</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="心悦俱乐部-创奇悦享会/index.html" class="navlist-link">
+                                    <i class="chuanqi"></i>
+                                    <span>你的传奇你的悦享</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- 登录 -->
+    <div class="qcwx-login" id="qcwx-login" style="display: none;">
+        <div class="qcwx-login-cover"></div>
+        <div class="qcwx-login-frame qcwx-active-qc">
+            <div class="qcwx-tabs">
+                <a href="javascript:void(0)" class="qc-tab" data-tab="qc"><i
+                        class="ico-qc-logo"></i><span>QQ账号登录</span></a>
+                <a href="javascript:void(0)" class="wx-tab" data-tab="wx"><i
+                        class="ico-wx-logo"></i><span>微信账号登录</span></a> <a href="javascript:void(0)"
+                    class="qcwxtab-close">×</a> </div>
+            <div class="qcwx-tips">微信和QQ是两个独立账号，账号信息不互通</div>
+            <div class="qcwx-frame">
+                <div id="qcwx-frame-qc-div" class="qcwx-frame-qc-div"><iframe
+                        src="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;state=STATE&amp;client_id=101478665&amp;redirect_uri=https%3A%2F%2Fxinyue.qq.com%2Fcomm-htdocs%2Flogin%2Fqc_redirect.html%3Fparent_domain%3Dhttps%253A%252F%252Fxinyue.qq.com"
+                        frameborder="0" class="qcwx-frame-qc"></iframe></div>
+                <div id="qcwx-frame-wx-div" class="qcwx-frame-wx-div"><iframe
+                        src="https://open.weixin.qq.com/connect/qrconnect?appid=wx5a3bbeac0d87c75a&amp;scope=snsapi_login&amp;redirect_uri=https%3A%2F%2Fxinyue.qq.com%2Fcomm-htdocs%2Fmilo_mobile%2Fwxlogin.html%3Fappid%3Dwx5a3bbeac0d87c75a%26sServiceType%3Dxinyue%26originalUrl%3Dhttps%253A%252F%252Fxinyue.qq.com%252F%2523%252F&amp;state=1&amp;login_type=jssdk&amp;self_redirect=true&amp;styletype=&amp;sizetype=&amp;bgcolor=&amp;rst=&amp;style=black"
+                        frameborder="0" scrolling="no" width="300px" height="400px"></iframe></div>
+            </div>
+        </div>
+    </div>
+    <div class="news-wrap">
+        <div class="news-box">
+            <div class="w_1200">
+                <div class="bread-crumbs"><span class="bread-l"><a href="index.html">首页</a><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAA0CAYAAABsDNN/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkIzQUYyQjczNkEyNzExRThBRkE4REQwNjhDQjBBODAzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkIzQUYyQjc0NkEyNzExRThBRkE4REQwNjhDQjBBODAzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjNBRjJCNzE2QTI3MTFFOEFGQThERDA2OENCMEE4MDMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjNBRjJCNzI2QTI3MTFFOEFGQThERDA2OENCMEE4MDMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6z1KU+AAABkklEQVR42qSXPUvDUBSG05bioFhw6NDBpYuLg0MRQVREWpv8Ff+FP8fFJTYWESqKSAeHLi51cHBQEAKCip/vgROQkKQ377nwDB3ycM57P1s5Ogw8ciyAd/BV9fhxAJ5BwyLpgnsQs5IG2ASh/KgaqqiDyCKR2XgBN6xEvulrFd+spAOaSR6spKsVRBaJ5HGtmVCSprYzSIdUZvT1m8gikVYewS0rqWuoJ+CXlazrcg+zFk6ZVj7AmVVyCV5ZyTJYTU9tWUly/IVWyRTcsZI5sJNXhatkG8xbJdLKG7iwSs71eqAkK6Bd1IqLpHBqXSU9MAEPrESuya1ZVcyS7OkaObVIJI8YXLGSCvDBEHyykjXQcsmjSCLH4E/e1neVSB5j8MRKlsCG5uGxkn1Qc80jTxJoG2NWUtNKBhosJeloJs6tZEl8XVxDiyTQJ1TMSlq6Uku1kpb4umdMkkAPnwkrkWfDLlPFf4m8jhetkuTZMLJKRlnPBldJW+8XqpVE4nS3zJL09MkwtUhktx4b/jx5fwIMAN2fUQsOvD1BAAAAAElFTkSuQmCC"></span>
+                    <span class="details-size">最新资讯</span></div>
+                <div class="news-modules">
+                    <ul class="news-sort">
+                        <li class="news-hover">全部</li>
+                        <li class="">新闻</li>
+                        <li class="">活动</li>
+                        <li class="">公告</li>
+                    </ul>
+                    <div class="news-content">
+                        <div class="news-content1">
+                            <dl class="news-list">
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《QQ飞车手游》·游戏家中国行深圳站受邀用户名单公示</span> <span
+                                                class="news-time">2020-01-03 15:00:10</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》心悦专区更新公告</span> <span
+                                                class="news-time">2020-01-02 10:30:34</span></a></div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》心悦专区升级维护时间延期公告</span> <span
+                                                class="news-time">2019-11-04 10:53:12</span></a></div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》心悦专区奖励升级公告</span> <span
+                                                class="news-time">2019-10-31 19:18:29</span></a></div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">2019年《王者荣耀》·游戏家中国行杭州站受邀用户名单公示</span> <span
+                                                class="news-time">2019-10-25 18:23:43</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">2019年《QQ飞车手游》·游戏家中国行郑州站受邀用户名单公示</span> <span
+                                                class="news-time">2019-10-25 16:40:17</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》联赛活动应援票异常处理公告</span> <span
+                                                class="news-time">2019-10-23 18:56:38</span></a></div>
+                                </dd>
+                            </dl>
+                            <dl class="news-list" style="display: none;">
+
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》心悦专区更新公告</span> <span
+                                                class="news-time">2020-01-02 10:30:34</span></a></div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》心悦专区升级维护时间延期公告</span> <span
+                                                class="news-time">2019-11-04 10:53:12</span></a></div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》心悦专区奖励升级公告</span> <span
+                                                class="news-time">2019-10-31 19:18:29</span></a></div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">2019年《王者荣耀》·游戏家中国行杭州站受邀用户名单公示</span> <span
+                                                class="news-time">2019-10-25 18:23:43</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">2019年《QQ飞车手游》·游戏家中国行郑州站受邀用户名单公示</span> <span
+                                                class="news-time">2019-10-25 16:40:17</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》联赛活动应援票异常处理公告</span> <span
+                                                class="news-time">2019-10-23 18:56:38</span></a></div>
+                                </dd>
+                            </dl>
+                            <dl class="news-list" style="display: none;">
+
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》心悦专区升级维护时间延期公告</span> <span
+                                                class="news-time">2019-11-04 10:53:12</span></a></div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》心悦专区奖励升级公告</span> <span
+                                                class="news-time">2019-10-31 19:18:29</span></a></div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">2019年《王者荣耀》·游戏家中国行杭州站受邀用户名单公示</span> <span
+                                                class="news-time">2019-10-25 18:23:43</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">2019年《QQ飞车手游》·游戏家中国行郑州站受邀用户名单公示</span> <span
+                                                class="news-time">2019-10-25 16:40:17</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》联赛活动应援票异常处理公告</span> <span
+                                                class="news-time">2019-10-23 18:56:38</span></a></div>
+                                </dd>
+                            </dl>
+                            <dl class="news-list" style="display: none;">
+
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">2019年《王者荣耀》·游戏家中国行杭州站受邀用户名单公示</span> <span
+                                                class="news-time">2019-10-25 18:23:43</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">2019年《QQ飞车手游》·游戏家中国行郑州站受邀用户名单公示</span> <span
+                                                class="news-time">2019-10-25 16:40:17</span></a>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <p class="category">公告</p>
+                                    <div class="news-tit"><a href="javascript:void(0)"><span
+                                                class="news-t">《地下城与勇士》联赛活动应援票异常处理公告</span> <span
+                                                class="news-time">2019-10-23 18:56:38</span></a></div>
+                                </dd>
+                            </dl>
+                            <div>
+                                <nav="">
+                                    <div="" class="paging">
+                                        <span class="">上一页</span>
+                                        <a href="javascript:;" class="paging-hover">1</a>
+                                        <a href="javascript:;" class>2</a>
+                                        <a href="javascript:;" class>3</a>
+                                        <a href="javascript:;" class>4</a>
+                                        <a href="javascript:;" class>5</a>
+                                        <a href="javascript:;" class>...</a>
+                                        <span class="">下一页</span>
+                            </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!---->
+                    <!---->
+                    <!---->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footerSocial">
+            <a href="javascript:;" title="心悦App" class="socialIcon ">
+                <i class="socialImg s-appDown"></i>
+                <i class="socialIcons socialIcon-joyClubApp"></i>
+                心悦App
+            </a> <a href="javascript:;" title="微信公众号" class="socialIcon ">
+                <i class="socialImg s-weChat"></i>
+                <i class="socialIcons socialIcon-wechat"></i>
+                微信公众号
+            </a>
+            <a href="javascript:;" title="手Q公众号" class="socialIcon ">
+                <i class="socialImg s-qq"></i>
+                <i class="socialIcons socialIcon-qq"></i>
+                手Q公众号
+            </a> <a href="//weibo.com/txjoyclub" target="_blank" title="新浪微博" class="socialIcon ">
+                <i class="socialImg s-sina"></i>
+                <i class="socialIcons socialIcon-sina"></i>
+                新浪微博
+            </a>
+            <a href="javascript:;" title="心悦热线" class="socialIcon ">
+                <i class="socialImg s-hotline"></i>
+                <i class="socialIcons socialIcon-joyClubHotline"></i>
+                心悦热线
+            </a>
+            <a href="javascript:;" title="帮助中心" class="socialIcon ">
+                <i class="socialIcons socialIcon-helpCenter"></i>
+                帮助中心
+            </a>
+        </div>
+        <div class="wrap_ieg">
+            <p><a href="//ieg.tencent.com" target="_blank">腾讯互动娱乐</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/contract.shtml" target="_blank">服务条款</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/privacy_guide.shtml?ADTAG=gamepcbottom" target="_blank">隐私保护指引</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/privacy_guide_children.shtml?ADTAG=gamepcbottom"
+                    target="_blank">儿童隐私保护指引</a>&nbsp;|&nbsp;
+                <a href="https://careers.tencent.com/" target="_blank">腾讯游戏招聘</a>&nbsp;|&nbsp;
+                <a href="//kf.qq.com/" target="_blank">腾讯游戏客服</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/web201910/introduce.html?ADTAG=gamepcbottom"
+                    target="_blank">游戏列表</a>&nbsp;|&nbsp;
+                <a href="https://jiazhang.qq.com/jz/home.html?ADTAG=gamepcbottom"
+                    target="_blank">成长守护平台</a>&nbsp;|&nbsp;
+                <a href="https://www.tencent.com/zh-cn/partnership.html" target="_blank">广告服务及商务合作</a></p>
+            <p class="e copyright_en">COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p class="copyright_zh"><a href="//www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司
+                    版权所有</a></p>
+        </div>
+        <div class="codeFixed"></div>
+        <div class="assitanceWrap active">
+            <a href="javascript:void(0)" title="回到顶部" class=" goTop js-goTop assitanceLink"></a>
+            <a href="#" title="回到首页" class="assitanceLink home"></a>
+        </div>
+    </footer>
+
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

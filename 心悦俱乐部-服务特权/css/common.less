@@ -1,0 +1,676 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #3a3d4b;
+}
+
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+@keyframes logoLight {
+    to {
+        transform: rotate(-25deg) translate3d(500px, 0, 0)
+    }
+}
+body {
+    width: calc(100vw - 5px);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+    nav {
+        width: 1000px;
+        height: 80px;
+        position: relative;
+
+        .logo {
+            position: absolute;
+            left: 10px;
+            top: 16px;
+
+            a {
+                display: block;
+                width: 218px;
+                height: 54px;
+                background: url("../img/sprite.png") no-repeat -18px -425px;
+            }
+        }
+
+
+        .login {
+            position: absolute;
+            right: 116px;
+            top: 23px;
+
+            a {
+                width: 122px;
+                height: 42px;
+                display: block;
+                border: 2px solid #dab77e;
+                font-size: 20px;
+                color: #dab77e;
+                padding: 6px 39px;
+                border-radius: 20px;
+
+                text-decoration: none;
+                // transition: all .15s linear 0s;
+                background-color: white;
+                background-color: transparent;
+            }
+
+            a:hover {
+                background: #dab77e;
+                color: #fff;
+            }
+        }
+
+        .navBtn {
+            position: absolute;
+            top: 18px;
+            left: 50%;
+            display: block;
+            height: 40px;
+            width: 40px;
+            padding-top: 10px;
+            margin-left: 450px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                transition: background .15s linear 0s;
+                top: -18px;
+                left: -42px;
+                width: 120px;
+                height: 90px;
+                // background: linear-gradient(90deg, #debb81, #a7793d);
+                cursor: pointer;
+                z-index: 9;
+
+
+
+            }
+
+            i {
+                position: absolute;
+                transition: all .6s cubic-bezier(.175, .885, .32, 1.275) 0s;
+                height: 3px;
+                width: 36px;
+                background: linear-gradient(90deg, #deba80, #a8793e);
+                // background: #dab77e\0;
+                // background-color: #fff;
+                transform: translate(4px);
+                will-change: transform;
+                z-index: 9;
+
+                &:nth-child(even) {
+                    margin-left: -2px;
+                    transform: translate(6px);
+                }
+
+                &:nth-child(odd) {
+                    margin-left: 2px;
+                    transform: translate(-4px);
+
+                }
+
+                &:nth-child(1) {
+                    top: 9px;
+                    transition-delay: .03s;
+                }
+
+                &:nth-child(2) {
+                    top: 18px;
+                    transition-delay: .06s;
+                }
+
+                &:nth-child(3) {
+                    top: 27px;
+                    transition-delay: .09s;
+                }
+
+                &:nth-child(4) {
+                    top: 36px;
+                    transition-delay: .15s;
+                }
+            }
+
+            &:hover {
+
+                i:nth-child(even) {
+                    margin-left: 2px;
+                    transform: translate(-4px);
+                }
+
+                i:nth-child(odd) {
+                    margin-left: -2px;
+                    transform: translate(6px);
+                }
+
+            }
+        }
+
+
+    }
+}
+
+
+
+.other {
+    background-color: #fff;
+    box-shadow: 0 0 10px #ddd;
+    nav {
+        .logo {
+            a {
+                background: url("../img/sprite.png") no-repeat -274px -423px;
+            }
+        }
+        .login {
+            a {
+                width: 122px;
+                height: 42px;
+                display: block;
+                border: 2px solid #dab77e;
+                font-size: 20px;
+                color: #dab77e;
+                padding: 6px 39px;
+                border-radius: 20px;
+                text-decoration: none;
+                // transition: all .15s linear 0s;
+                background-color: white;
+                background-color: transparent;
+            }
+            a:hover {
+                background: #dab77e;
+                color: #fff;
+            }
+        }
+
+        .navBtn {
+            position: absolute;
+            top: 18px;
+            left: 50%;
+            display: block;
+            height: 40px;
+            width: 40px;
+            padding-top: 10px;
+            margin-left: 450px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                transition: background .15s linear 0s;
+                top: -18px;
+                left: -42px;
+                width: 120px;
+                height: 90px;
+                background: linear-gradient(90deg, #debb81, #a7793d);
+                cursor: pointer;
+                z-index: 9;
+
+
+
+            }
+
+            i {
+                background: #fff ;
+
+            }
+        }
+    }
+}
+
+#zhixian {
+
+    background: linear-gradient(90deg, #deba80, #a8793e);
+    z-index: 2000;
+    cursor: pointer;
+
+    &:hover {
+        width: 46px;
+    }
+
+    &::after {
+        position: absolute;
+        z-index: 20000;
+        content: "CLOSE";
+        font-weight: 400;
+        font-size: 12px;
+        font-style: normal;
+        right: 0;
+        top: 50%;
+        color: #a27748;
+        height: 46px;
+        line-height: 46px;
+        padding-left: 18px;
+        transform: translate(90%, -50%);
+    }
+}
+
+// 遮罩层
+.navwrap {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+
+    background: rgba(0, 0, 0, .3);
+    z-index: 998;
+}
+
+// 遮罩层里内容
+.navcontent {
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+
+    // transform: scaleY(1);
+    // transition: all 2s;
+
+    .navcenter {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+
+
+        .logo {
+            display: block;
+            position: absolute;
+            width: 218px;
+            height: 54px;
+            left: 50%;
+            top: 100px;
+            margin-left: -109px;
+
+            i {
+                display: block;
+                background: url('../img/sprite.png') no-repeat;
+                position: absolute;
+            }
+
+            .logo-icon {
+                left: 0;
+                top: 0;
+                width: 61px;
+                height: 45px;
+                background-position: -13px -425px;
+            }
+
+            .i-1 {
+                top: 20px;
+                width: 27px;
+                height: 23px;
+            }
+
+            .xin {
+                left: 69px;
+                background-position: -342px -443px;
+            }
+
+            .yue {
+                left: 99px;
+                background-position: -373px -443px;
+            }
+
+            .ju {
+                left: 129px;
+                background-position: -404px -443px;
+            }
+
+            .lei {
+                left: 159px;
+                background-position: -434px -443px;
+            }
+
+            .bu {
+                left: 189px;
+                background-position: -466px -443px;
+            }
+
+            .text {
+                width: 180px;
+                height: 12px;
+                background-position: -343px -430px;
+                top: 4px;
+                left: 70px;
+            }
+        }
+
+        .lightBox {
+            width: 222px;
+            height: 45px;
+            left: 0;
+            top: 0;
+
+            position: absolute;
+            overflow: hidden;
+
+
+
+            &:before {
+
+                position: absolute;
+                content: '';
+                pointer-events: none;
+                left: 0;
+                top: 0;
+                transform: rotate(-25deg);
+                height: 300px;
+                width: 20px;
+                background: #fff;
+                opacity: .8;
+            }
+
+            &:after {
+
+                position: absolute;
+                content: '';
+                pointer-events: none;
+                left: -150px;
+                top: -0;
+                transform: rotate(-25deg);
+                height: 300px;
+                width: 20px;
+                background: #fff;
+                opacity: .8;
+
+                animation: logoLight .8s .4s linear forwards;
+
+            }
+
+            &:hover::before {
+                animation: logoLight .8s 0s linear forwards;
+            }
+
+        }
+
+        .list {
+            display: block;
+            width: 100%;
+            padding: 260px 0 100px;
+            opacity: 1;
+
+
+
+            li {
+                float: left;
+                width: 200px;
+                height: 44px;
+                transition: all .5s;
+                text-align: center;
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+
+            a {
+                color: #999;
+                font-size: 14px;
+
+                i {
+                    display: block;
+                    width: 134px;
+                    height: 20px;
+                    margin: 0 auto;
+                    background: url('../img/sprite.png') no-repeat;
+                }
+
+                .games {
+                    background-position: -134px 0;
+                }
+
+                .gf {
+                    background-position: -536px 0;
+                }
+
+                .xia {
+                    background-position: -804px 0;
+                }
+
+                .life {
+                    background-position: -268px 0;
+                }
+
+                .fu {
+                    background-position: -402px 0;
+                }
+
+                .chuanqi {
+                    background-position: -670px 0;
+                }
+            }
+
+            li:hover i {
+                background-position-y: -22px;
+
+            }
+        }
+    }
+}
+
+
+footer {
+    height: 420px;
+    width: 100%;
+    background: url("../img/footer.jpg");
+    background-size: 100%;
+
+    .footerSocial {
+        text-align: center;
+        width: 100%;
+        height: 267px;
+        padding-top: 140px;
+        display: inline-block;
+
+
+        .socialIcon {
+            position: relative;
+            white-space: nowrap;
+            cursor: pointer;
+            width: 100px;
+            color: #555;
+            margin: 0 25px;
+            transition: all .15s linear 0s;
+            font-size: 20px;
+            display: inline-block;
+
+            &:hover {
+                color: #dab77e;
+
+                .socialIcons {
+                    background-position-y: -148px;
+                }
+
+                .socialImg {
+                    opacity: 1;
+                    transform: translate(-50%);
+                }
+            }
+
+            .socialImg {
+                display: block;
+                position: absolute;
+                height: 90px;
+                width: 90px;
+                pointer-events: none;
+                left: 50%;
+                top: -100px;
+                opacity: 0;
+                transform: translate(-50%, -20px);
+                transition: all .15s linear 0s;
+                background-size: 100%;
+                border: 5px solid #d9b57a;
+                border-radius: 4px;
+            }
+
+            .s-appDown {
+                position: absolute;
+                background-image: url(../img/erweima01.jpg);
+            }
+
+            .s-weChat {
+                background-image: url(../img/erweima02.jpeg);
+            }
+
+            .s-qq {
+                background-image: url(../img/erweima03.jpg);
+            }
+
+            .s-sina {
+                background-image: url(../img/erweima04.jpg);
+            }
+
+            .s-hotline {
+                background: url(../img/sprite.png) no-repeat -416px -282px;
+            }
+
+            .socialIcons {
+
+                display: block;
+                margin: 0 auto 20px;
+                height: 45px;
+                width: 56px;
+                transition: all .15s linear 0s;
+                white-space: nowrap;
+                cursor: pointer;
+                color: #555;
+                margin: 0 25px;
+                font-size: 20px;
+                background-image: url(../img/sprite.png);
+                background-repeat: no-repeat;
+                margin: 0 auto 20px;
+
+            }
+
+            .socialIcon-joyClubApp {
+                background-position: -418px -203px;
+            }
+
+
+            .socialIcon-wechat {
+                background-position: -362px -203px;
+            }
+
+            .socialIcon-qq {
+                background-position: -306px -203px;
+            }
+
+            .socialIcon-sina {
+                background-position: -642px -203px;
+            }
+
+            .socialIcon-joyClubHotline {
+                background-position: -474px -203px;
+            }
+
+            .socialIcon-helpCenter {
+                background-position: -586px -203px;
+            }
+
+        }
+    }
+
+    .wrap_ieg {
+        padding-top: 54px;
+        font-size: 12px;
+        color: #6c6c6c;
+        height: 153px;
+        text-align: center;
+        line-height: 1.5;
+
+        a {
+            color: #6c6c6c;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+    }
+
+    .codeFixed {
+        position: fixed;
+        right: 120px;
+        bottom: 0;
+        width: 194px;
+        height: 246px;
+        background: url(../img/codeFixed.png) no-repeat;
+        z-index: 60;
+    }
+
+    .assitanceWrap {
+        position: fixed;
+        right: 20px;
+        left: auto;
+        bottom: 63px;
+        z-index: 60;
+        opacity: 0;
+        transition: opacity .3s linear 0s;
+        pointer-events: none;
+
+        .assitanceLink {
+            position: relative;
+            display: block;
+            height: 76px;
+            width: 76px;
+            // background: #3a3d4b;
+            background: linear-gradient(90deg, #3a3d4b, #3a3d4b);
+            margin: 13px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+            transition: all .5s linear;
+
+            &:hover {
+                background: linear-gradient(90deg, #ecc78f, #cda468);
+                color: #fff;
+            }
+
+        }
+
+        .goTop {
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                left: 0;
+                top: 0;
+                width: 76px;
+                height: 76px;
+                background-image: url("../img/sprite.png");
+                background-position: 3px -487px;
+            }
+        }
+
+        .home {
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                left: 0;
+                top: 0;
+                width: 76px;
+                height: 76px;
+                background-image: url("../img/sprite.png");
+                background-position: -73px -487px;
+            }
+        }
+    }
+
+    .active {
+        pointer-events: auto;
+        opacity: 1;
+    }
+}

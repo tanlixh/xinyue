@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description"
+        content="腾讯游戏心悦俱乐部是腾讯游戏玩家成长互动的高端平台。为玩家定制游戏、服务、生活权益，助力玩家游戏成长、鼓励玩家互动分享，游戏内外，让玩家快乐无处不在。心悦和你一样，我们都是游戏家，追寻热爱与自豪。">
+    <meta name="Keywords"
+        content="心悦会员,心悦官网,心悦成长值,心悦俱乐部,xinyue,心悦游戏专区,游戏礼包,手机游戏礼包,LOL皮肤,CF礼包,DNF礼包,QQ面板图标,账号找回,误操作恢复,京东优惠券,玩家线下活动">
+    <title>心悦俱乐部-生活特权</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bare.css">
+    <link rel="stylesheet" href="./less/nav.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="w">
+            <nav>
+                <div class="logo"><a href="../index.html"></a></div>
+                <div class="login"><a href="javascript:void(0)">登录</a></div>
+                <div class="navBtn">
+                    <i></i>
+                    <i class="zhixian"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="navwrap" style="display: none;" id="navwarp">
+                </div>
+                <div class="navcontent" style="display: none;">
+                    <div class="navcenter">
+                        <a href="../index.html" class="logo">
+                            <i class="logo-icon"></i>
+                            <i class="i-1 xin"></i>
+                            <i class="i-1 yue"></i>
+                            <i class="i-1 ju"></i>
+                            <i class="i-1 lei"></i>
+                            <i class="i-1 bu"></i>
+                            <i class="text"></i>
+                            <div class="lightBox"></div>
+                        </a>
+                        <ul class="list">
+                            <li>
+                                <a href="../心悦俱乐部-游戏特权/index.html" class="navlist-link">
+                                    <i class="games"></i>
+                                    <span>海量礼包 专属福利</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-G分特权/upload/privilege.html" class="navlist-link">
+                                    <i class="gf"></i>
+                                    <span>好礼兑换 处处惊喜</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-线下特权/offline.html" class="navlist-link">
+                                    <i class="xia"></i>
+                                    <span>专属活动 释放热爱</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.Life privileges.html" class="navlist-link">
+                                    <i class="life"></i>
+                                    <span>专属活动 释放热爱</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-服务特权/xinyue.html" class="navlist-link">
+                                    <i class="fu"></i>
+                                    <span>专业服务贴心陪伴</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../心悦俱乐部-创奇悦享会/index.html" class="navlist-link">
+                                    <i class="chuanqi"></i>
+                                    <span>你的传奇你的悦享</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- 头部结束 -->
+    <!-- 登录 -->
+    <!-- <div class="qcwx-login" id="qcwx-login" style="display: none;">
+        <div class="qcwx-login-cover"></div>
+        <div class="qcwx-login-frame qcwx-active-qc">
+            <div class="qcwx-tabs">
+                <a href="javascript:void(0)" class="qc-tab" data-tab="qc"><i
+                        class="ico-qc-logo"></i><span>QQ账号登录</span></a>
+                <a href="javascript:void(0)" class="wx-tab" data-tab="wx"><i
+                        class="ico-wx-logo"></i><span>微信账号登录</span></a> <a href="javascript:void(0)"
+                    class="qcwxtab-close">×</a> </div>
+            <div class="qcwx-tips">微信和QQ是两个独立账号，账号信息不互通</div>
+            <div class="qcwx-frame">
+                <div id="qcwx-frame-qc-div" class="qcwx-frame-qc-div"><iframe
+                        src="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;state=STATE&amp;client_id=101478665&amp;redirect_uri=https%3A%2F%2Fxinyue.qq.com%2Fcomm-htdocs%2Flogin%2Fqc_redirect.html%3Fparent_domain%3Dhttps%253A%252F%252Fxinyue.qq.com"
+                        frameborder="0" class="qcwx-frame-qc"></iframe></div>
+                <div id="qcwx-frame-wx-div" class="qcwx-frame-wx-div"><iframe
+                        src="https://open.weixin.qq.com/connect/qrconnect?appid=wx5a3bbeac0d87c75a&amp;scope=snsapi_login&amp;redirect_uri=https%3A%2F%2Fxinyue.qq.com%2Fcomm-htdocs%2Fmilo_mobile%2Fwxlogin.html%3Fappid%3Dwx5a3bbeac0d87c75a%26sServiceType%3Dxinyue%26originalUrl%3Dhttps%253A%252F%252Fxinyue.qq.com%252F%2523%252F&amp;state=1&amp;login_type=jssdk&amp;self_redirect=true&amp;styletype=&amp;sizetype=&amp;bgcolor=&amp;rst=&amp;style=black"
+                        frameborder="0" scrolling="no" width="300px" height="400px"></iframe></div>
+            </div>
+        </div>
+    </div> -->
+    <div class="bj"></div>
+
+    <!-- type start -->
+    <div class="w type">
+        <div class="screen">
+            <ul id="imgGroup">
+                <li class="lb-item"><a href="javascript:void(0)">
+                        <img src="./img/0.jpg" alt="">
+                    </a></li>
+                <li class="lb-item"><a href="javascript:void(0)">
+                        <img src="./img/1.jpg" alt="">
+                    </a></li>
+                <li class="lb-item"><a href="javascript:void(0)">
+                        <img src="./img/2.jpg" alt="">
+                    </a></li class="lb-item">
+                <li class="lb-item"><a href="javascript:void(0)">
+                        <img src="./img/0.jpg" alt="">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="click w">
+            <ul>
+                <li><img src="./img/0.jpg" alt=""></li>
+                <li><img src="./img/1.jpg" alt=""></li>
+                <li><img src="./img/2.jpg" alt=""></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- type end -->
+     <div class="line w"></div>
+    <!-- privilege start -->
+    <div class="gengdou w" style="margin-top: 90px; margin-bottom: 80px;">
+        更多特权
+    </div>
+    <div class="w show" >
+        <ul>
+            <li>
+                <a href="javascript:void(0)"><img src="./img/a.jpg" alt=""></a>
+
+                <div class="str">
+                    <h5>五一庆典，劳动最光荣</h5>
+                    <p>2019-04-30 19:47:44 ~ 2019-05-08 23:55:46</p>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="./img/b.jpg" alt=""></a>
+
+                <div class="str">
+                    <h5>（心悦专享）腾讯电竞2018亚运会</h5>
+                    <p>2019-04-22 16:17:05 ~ 2019-07-31 23:55:07</p>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="./img/c.jpg" alt=""></a>
+
+                <div class="str">
+                    <h5>周边商城</h5>
+                    <p>2019-04-22 16:16:48 ~ 2019-05-31 23:55:497</p>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="./img/d.jpg" alt=""></a>
+
+                <div class="str">
+                    <h5>春暖花开，踏青寻宝</h5>
+                    <p>2019-04-22 16:16:30 ~ 2019-05-31 23:55:28</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="no w">
+        <a href="javascript:void(0)">没有更多啦</a>
+    </div>
+    <!-- privilege end -->
+
+    <!-- code start -->
+    <div class="code">
+    </div>
+    <!-- code end -->
+
+   
+    <!-- 脚部 -->
+    <footer>
+        <div class="footerSocial">
+            <a href="javascript:;" title="心悦App" class="socialIcon ">
+                <i class="socialImg s-appDown"></i>
+                <i class="socialIcons socialIcon-joyClubApp"></i>
+                心悦App
+            </a> <a href="javascript:;" title="微信公众号" class="socialIcon ">
+                <i class="socialImg s-weChat"></i>
+                <i class="socialIcons socialIcon-wechat"></i>
+                微信公众号
+            </a>
+            <a href="javascript:;" title="手Q公众号" class="socialIcon ">
+                <i class="socialImg s-qq"></i>
+                <i class="socialIcons socialIcon-qq"></i>
+                手Q公众号
+            </a> <a href="//weibo.com/txjoyclub" target="_blank" title="新浪微博" class="socialIcon ">
+                <i class="socialImg s-sina"></i>
+                <i class="socialIcons socialIcon-sina"></i>
+                新浪微博
+            </a>
+            <a href="javascript:;" title="心悦热线" class="socialIcon ">
+                <i class="socialImg s-hotline"></i>
+                <i class="socialIcons socialIcon-joyClubHotline"></i>
+                心悦热线
+            </a>
+            <a href="javascript:;" title="帮助中心" class="socialIcon ">
+                <i class="socialIcons socialIcon-helpCenter"></i>
+                帮助中心
+            </a>
+        </div>
+        <div class="wrap_ieg">
+            <p><a href="//ieg.tencent.com" target="_blank">腾讯互动娱乐</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/contract.shtml" target="_blank">服务条款</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/privacy_guide.shtml?ADTAG=gamepcbottom" target="_blank">隐私保护指引</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/privacy_guide_children.shtml?ADTAG=gamepcbottom"
+                    target="_blank">儿童隐私保护指引</a>&nbsp;|&nbsp;
+                <a href="https://careers.tencent.com/" target="_blank">腾讯游戏招聘</a>&nbsp;|&nbsp;
+                <a href="//kf.qq.com/" target="_blank">腾讯游戏客服</a>&nbsp;|&nbsp;
+                <a href="//game.qq.com/web201910/introduce.html?ADTAG=gamepcbottom"
+                    target="_blank">游戏列表</a>&nbsp;|&nbsp;
+                <a href="https://jiazhang.qq.com/jz/home.html?ADTAG=gamepcbottom"
+                    target="_blank">成长守护平台</a>&nbsp;|&nbsp;
+                <a href="https://www.tencent.com/zh-cn/partnership.html" target="_blank">广告服务及商务合作</a></p>
+            <p class="e copyright_en">COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p class="copyright_zh"><a href="//www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司
+                    版权所有</a></p>
+        </div>
+        <div class="codeFixed"></div>
+        <div class="assitanceWrap active" style="bottom: 67px; top: auto ;z-index: 1000;">
+            <a href="javascript:void(0)" title="回到顶部" class=" goTop js-goTop assitanceLink"></a>
+            <a href="../index.html" title="回到首页" class="assitanceLink home"></a>
+        </div>
+    </footer>
+
+     <!--  home start -->
+    <!-- <div class="home">
+        <a href="javascript:void(0)" class="top"></a>
+        <a href="javascript:void(0)" class="bottom"></a>
+    </div> -->
+    <!--  home end -->
+
+
+
+
+</body>
+<script src="./js/jquery-3.4.1.js"></script>
+<script src="./js/轮播图.js"></script>
+<script src="./js/siema.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    // 轮播图滑动
+    new Siema({
+        selector: '.screen',
+        // duration: 200,
+        easing: 'ease-out',
+        // perPage: 1,
+        // startIndex: 0,
+        draggable: true,
+        threshold: 20,
+        // loop: false,
+    });
+
+    // // 二维码
+    // $(function () {
+    //     // 获取头部距离触发事件距离
+    //     let head = $('header').height();
+    //     let scr  = $('.screen').height();
+    //     let top = head + scr ;
+    //     // 给页面设置滚动事件
+
+    //     $(document).on('scroll', function () {
+    //         let scrollValue = $(window).scrollTop();
+    //         if (scrollValue >= top) {
+    //             $('.home').fadeIn(500);
+    //         }else {
+    //             $('.home').fadeOut(500);
+    //         }
+    //     })
+
+    // });
+</script>
+
+</html>

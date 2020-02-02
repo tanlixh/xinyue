@@ -1,0 +1,572 @@
+@keyframes border{
+    15%{opacity:.5}
+    20%{transform:scale(1.5)}
+    98%{opacity: .1}
+    100%{transform:scale(3)}
+    }
+@keyframes bg{
+    5%{transform:scale(1.2)}
+    10%{transform:scale(.8)}
+    15%{transform:scale(1.1)}
+    20%{transform:scale(.9)}
+    25%{transform:scale(1)}
+ }
+
+@keyframes rotate{
+    100%{transform:rotate(1turn)}
+}
+.bg {
+    width: 100vw;
+    height: 1080px;
+    margin: 0 auto;
+    background: url("../img/bg.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bannMask{
+height: 128px;
+width:100%;
+background:linear-gradient(black,rgba(0,0,0,0));left:0;
+top:0;
+z-index:1;
+pointer-events:none;
+opacity:.5;
+position: absolute;
+} 
+.head {
+width: 100%;
+height: 80px;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 20;
+background-color: pink;
+opacity: .2;
+}
+
+.code {
+width: 194px;
+height: 246px;
+position: fixed;
+right: 120px;
+bottom: 0;
+z-index: 21;
+background: url("../img/Fixcode.png") no-repeat ;
+background-size: cover;
+}
+
+.tab {
+    width: 155px;
+    height: 320px;
+    position: fixed;
+    z-index: 18;
+    top: 128px;
+    left: 193px;
+    background: url("../img/精灵图1.png") -991px 0 no-repeat;
+    background-size: 1373px 1000px;
+    padding-top:46px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.link {
+    height: 80px;
+    width: 144px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 80px;
+}
+
+.link span {
+    text-align: center;
+    width: 108px;
+    position: absolute;
+    color: #7489a6;
+    line-height: 1.4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-left: 10px;
+    display: inline-block;
+}
+.link span:before {
+    height: 8px;
+    width: 3px;
+    transform: skew(-45deg);
+    background: #7489a6;
+    right: 2px;
+    bottom: -8px;
+    content: '';
+    position: absolute;
+}
+.link .line {
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    background: #7489a6;
+    display: block;
+}
+.tabIcon {
+    left: -25px;
+    bottom: -3px;
+    background-position: -1241px -324px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/精灵图1.png");
+    background-size: 1373px 1000px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.link.active .tabIcon {
+    background-position:-1271px -324px;
+}
+.link em {
+    white-space: nowrap;
+    font-weight: 700;
+    display: block;
+}
+.link.active span,
+.link:hover span{
+    color: #fff;
+    text-shadow: 0 0 20px #25a0d4, 0 0 20px #25a0d4, 0 0 20px #25a0d4;
+}
+.link:hover .tabIcon {
+    animation: rotate 1s linear infinite;
+}
+
+
+.see {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
+    height: 100%;
+}
+.long {
+    position: relative;
+    width: 100%;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+.long li {
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    display: block;
+
+}
+.long li .sec {
+    padding-top: 88px;
+}
+.long li .sec .sec-ite {
+    width: 1401px;
+    height: 1022px;
+    background: url(../img/conbg.png) no-repeat;
+    margin: 0 auto;
+    left: 50%;
+    padding-top: 48px;
+    margin-left: -700px;
+    margin-top: -30px;
+    opacity: 1;
+    position: relative;
+}
+.long li:first-child .Dnflogo{
+    left: 51.5%;
+    top: -50px;
+    transform: translate(-50%,0);
+    background-image: url(../img/精灵图1.png);
+    background-size: 1373px 1000px;
+    background-repeat: no-repeat;
+    background-position: 0 -853px;
+    width: 264px;
+    height: 147px;
+    position: absolute;
+     
+}
+.long li:first-child .dnfTitle,
+.long li:nth-child(2) .dnfTitle,
+.long li:nth-child(3) .dnfTitle {
+    letter-spacing: 4px;
+    font-style: italic;
+    text-align: center;
+    height: 151px;
+    font-weight: 400;
+    position: relative;
+}
+.long li .dnfTitle span {
+    font-size: 46px;
+    margin-left: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(../img/精灵图1.png);
+    background-size: 1373px 1000px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.long li:first-child .dnfTitle span {
+    background-position: 0 -732px;
+    width: 424px;
+    height: 116px;
+}
+.long li:nth-child(2) .dnfTitle span {
+    background-position: -805px -732px;
+    width: 315px;
+    height: 76px;
+}
+.long li:nth-child(3) .dnfTitle span{
+    background-position: -429px -732px;
+    width: 371px;
+    height: 76px;
+}
+.long li .bx {
+    margin: 50px auto 0;
+    background-position: 0 0;
+    width: 986px;
+    height: 567px;
+    background-image: url(../img/精灵图1.png);
+    background-size: 1373px 1000px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bx .mapBeijin {
+    left: 75%;
+    top: 29%;
+    position: absolute;
+    cursor: default;
+}
+.bx .mapchengdu {
+    left: 19%;
+    top: 53%;
+    position: absolute;
+    cursor: default;
+}
+.bx .mapchengdu .mapInfo {
+    left: -46px;
+    top: 45px;
+    color: #fff;
+    padding-left: 45px;
+    padding-top: 10px;
+    opacity: 0;
+    transition: all .15s linear 0s;
+    pointer-events: none;
+    background-position: -382px -572px;
+    width: 377px;
+    height: 155px;
+    background-image: url(../img/精灵图1.png);
+    background-size: 1373px 1000px;
+    background-repeat: no-repeat;
+    position: absolute;
+    line-height: normal;
+}
+.bx .stop {
+    font-size: 26px;
+    color: #1c64a7;
+}
+.bx .time {
+    font-size: 20px;
+    color: #323e57;
+}
+.bx .content {
+    font-size: 16px;
+    color: #323e57;
+    margin-top: 14px;
+    padding-right: 20px;
+}
+.bx .mapwuhan {
+    left: 56%;
+    top: 55%;
+    position: absolute;
+    cursor: default;
+}
+.bx .mapxihan {
+    left: 36%;
+    top: 21%;
+    position: absolute;
+    cursor: default;
+}
+.bx .mappoint {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+.bx .bgc {
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    margin-top: -6px;
+    border-radius: 50%;
+    background: #889fbb;
+    left: 50%;
+    top: 50%;
+    display: block;
+    position: absolute;
+
+}
+.bx .acti .bgc {
+    animation:bg 2s linear infinite;background:#00a9f7;
+}
+.bx .bor {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #889fbb;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border-radius: 50%;
+    opacity: .6;
+    position: absolute;
+    
+}
+.bx .acti .bor {
+    animation:border 2s linear infinite;
+    border-color:#00a9f7;
+    opacity: 0;
+}
+.bx .wait {
+    opacity: 1;
+    width: 22px;
+    height: 22px;
+    margin-left: -11px;
+    margin-top: -11px;
+}
+.bx .acti .dela {
+    animation-delay:.5s;
+}
+
+.bx .mapname {
+    font-size: 25px;
+    color: #889fbb;
+    white-space: nowrap;
+    margin-top: -12px;
+    left: 35px;
+    position: absolute;
+}
+.long li .act-pic {
+    margin: 30px auto 0;
+    height: 224px;
+    width: 714px;
+    background: url(../img/线下活动.png) no-repeat;
+}
+.long li .act-rules {
+    width: 706px;
+    margin: 33px auto 0;
+}
+.act-rules:after, .act-rules:before {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,.2),rgba(255,255,255,0));
+}
+.person-ul {
+    font-size: 17px;
+    color: #fff;
+    text-align: left;
+    padding-left: 40px;
+    display: inline-block;
+    line-height: normal;
+}
+.act-rules .person-ul li {
+    margin: 10px 0;
+    position: relative;
+}
+.rules-num {
+    left: -34px;
+    top: 0;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+}
+.act .sectionBtn {
+    margin: 0 auto;
+    background-position: -1155px -162px;
+    width: 218px;
+    height: 157px;
+    background-image: url(../img/精灵图1.png);
+    background-size: 1373px 1000px;
+    background-repeat: no-repeat;
+    display: block;
+}
+.tab-content-desribe {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+}
+.feedback-area {
+    width: 1010px;
+    margin: 17px auto 0;
+    border-radius: 5px;
+    overflow: hidden;
+    clear: both;
+    height: auto;
+}
+.feedback-input {
+    width: 890px;
+    background: #0d162f;
+    font-size: 20px;
+    color: #707071;
+    border: none;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 30px;
+    opacity: .68;
+    float: left;
+}
+.feedback-btn {
+    line-height: 40px;
+    height: 40px;
+    width: 120px;
+    background: #0078ff;
+    text-align: center;
+    font-size: 21px;
+    color: #fff;
+    transition: all .15s linear 0s;
+    float: left;
+    display: block;
+}
+.tab-content-feedback {
+    height: 488px;
+    width: 1010px;
+    background: url(../img/commbg.png) no-repeat;
+    margin: 12px auto 0;
+    padding: 14px 0;
+}
+.feedback-wrap {
+    width: 904px;
+    overflow-y: auto;
+    height: 460px;
+    margin: 0 auto;
+}
+.feedback-list li {
+    padding: 11px 0;
+    clear: both;
+    height: auto;
+    position: relative;
+    line-height: normal;
+}
+.feedback-img {
+    width: 58px;
+    height: 58px;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+}
+.feedback-img img {
+    width: 100%;
+    height: 100%;
+}
+.feedback-info {
+    padding: 0 140px 0 18px;
+    width: 820px;
+    float: left;
+    position: relative;
+}
+.feedback-name {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.feedback-msg {
+    font-size: 14px;
+    color: #fff;
+    margin-block-start:0;
+}
+.feedback-action {
+    padding: 0 10px;
+    background: #77bdff;
+    border-radius: 5px;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    color: #121212;
+    transition: all .15s linear 0s;
+    position: absolute;
+    display: inline-block;
+}
+.feedback-action:hover {
+    background: #fff;
+}
+.icon-like {
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -4px;
+    background-position: -1325px -324px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/精灵图1.png);
+    background-size: 1373px 1000px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.section {
+    display: block;
+    position: relative;
+}
+
+.bg .scanC {
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    opacity: .8;
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.bg .scanC .coBg {
+    width: 624px;
+    height: 627px;
+    margin: 0 auto;
+    background: url(../img/codeBg.png) ;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.bg .scanC .cacl {
+    position: absolute;
+    font-size: 45px;
+    color: white;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+    transform-origin: 17.5px 30.3px;
+}
+.bg .scanC .cacl:hover {
+    transform: rotate(90deg);
+}
+.bg .scanC .imgC {
+    margin:0 auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    top: 40%;
+    transform: translateY(-50%);
+    background: url(../img/code.jpg);
+    display: none;
+
+}
+.bg .scanC p {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+   bottom: -210px;
+}
